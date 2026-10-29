@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Gabin Sukii</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Fredoka -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@93.6,300..700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sukii-yellow': '#FEF08A',
+                        'sukii-red': '#DC2626',
+                        'sukii-cream': '#FEFCE8',
+                        'sukii-brown': '#78350F',
+                        'grass-green': '#4ADE80',
+                        'grass-dark': '#22C55E'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Fredoka', 'sans-serif'],
+                        'fredoka': ['Fredoka', 'cursive', 'sans-serif'],
+                        'inter': ['Fredoka', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #22c55e;
+            background-image: 
+                radial-gradient(#15803d 2px, transparent 2px),
+                radial-gradient(#16a34a 2px, #22c55e 2px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+        }
+        .font-montserrat {
+            font-family: 'Fredoka', sans-serif;
+        }
+        .font-fredoka {
+            font-family: 'Fredoka', cursive, sans-serif;
+        }
+        .sukii-card {
+            border: 3px solid #1F2937;
+            box-shadow: 4px 4px 0px #1F2937;
+            border-radius: 1.5rem;
+            transition: all 0.2s ease;
+            background: #ffffff;
+        }
+        .sukii-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 6px 6px 0px #1F2937;
+        }
+        .sukii-btn {
+            border: 3px solid #1F2937;
+            box-shadow: 3px 3px 0px #1F2937;
+            transition: all 0.1s ease;
+        }
+        .sukii-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0px #1F2937;
+        }
+    </style>
+</head>
+<body class="text-gray-900 pb-36">
+
+    <!-- Header Banner -->
+    <header class="pt-8 pb-6 px-4 text-center relative overflow-hidden">
+        <div class="max-w-md mx-auto bg-amber-50/95 border-4 border-gray-900 rounded-[2rem] p-6 shadow-[6px_6px_0px_#1F2937] relative overflow-hidden backdrop-blur-sm">
+            <!-- Title matching reference style -->
+            <h1 class="font-montserrat font-black text-4xl sm:text-5xl text-gray-900 tracking-tight drop-shadow-sm">
+                GABIN SUKII
+            </h1>
+
+            <!-- Subtitle Open PO -->
+            <p class="font-montserrat font-extrabold text-rose-600 text-sm sm:text-base tracking-widest uppercase mt-1">
+                OPEN PRE-ORDER ES KRIM GABIN
+            </p>
+
+            <!-- Pill Badge with blue fill and yellow dashed border -->
+            <div class="mt-4 inline-flex items-center justify-center bg-blue-600 border-2 border-dashed border-yellow-300 px-6 py-2 rounded-full shadow-sm">
+                <span class="font-montserrat font-bold text-sm sm:text-base text-white tracking-wide">All Varian 10k!</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto p-4 mt-2">
+        
+        <!-- Info Alert / Promo Notice -->
+        <div class="bg-amber-100 border-4 border-gray-900 rounded-3xl p-5 shadow-[6px_6px_0px_#1F2937] mb-6 relative">
+            <div class="absolute -top-3 -right-2 bg-rose-600 text-white text-xs font-bold w-8 h-8 rounded-full border-2 border-gray-900 flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <h2 class="font-fredoka text-xl text-gray-900 leading-tight flex items-center gap-2 mb-1">
+                <span>🎁</span> FREE THERMAL BAG!
+            </h2>
+            <p class="text-xs sm:text-sm font-medium text-gray-800 leading-relaxed">
+                Dapatkan <span class="font-bold text-rose-600 underline">FREE THERMAL BAG</span> dan <span class="font-bold">BISA COD SEPUTARAN TEMBALANG</span> untuk setiap pembelian <span class="font-bold text-rose-600 text-base">≥ 3 pcs</span> varian apa saja!
+            </p>
+            <div class="mt-3 pt-3 border-t-2 border-gray-900/20 flex flex-col gap-1 text-xs font-bold text-gray-800">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>PRE-ORDER: 4-10 November 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>READY: Lapangan Basket FISIP UNDIP (13 Nov 2026)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Title: Pilih Pasukan Gabinmu! -->
+        <div class="relative text-center my-6">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t-4 border-dashed border-gray-900"></div>
+            </div>
+            <div class="relative inline-block px-4">
+                <span class="font-fredoka text-lg sm:text-xl bg-white border-3 border-gray-900 px-5 py-2 rounded-2xl shadow-[4px_4px_0px_#1F2937] text-gray-900">
+                    Pilih Pasukan Gabinmu!
+                </span>
+            </div>
+        </div>
+
+        <!-- Product List Section -->
+        <section class="mb-6">
+            <!-- Products Container -->
+            <div id="product-list" class="grid grid-cols-1 gap-4">
+                <!-- Javascript will render products here -->
+            </div>
+        </section>
+
+        <!-- Customer Form Section -->
+        <section class="bg-white border-4 border-gray-900 rounded-3xl p-5 shadow-[6px_6px_0px_#1F2937] mb-6">
+            <h2 class="font-fredoka text-xl text-gray-900 mb-4 flex items-center gap-2">
+                <span>📝</span> Data Pemesan & Pengiriman
+            </h2>
+
+            <div class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Nama Panggilan / Kamu:</label>
+                        <input type="text" id="cust-name" placeholder="Contoh: Keonho" class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Nomor WhatsApp:</label>
+                        <input type="tel" id="cust-wa" placeholder="Contoh: 08123456789" class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600">
+                    </div>
+                </div>
+
+                <!-- Fulfillment Method Choice -->
+                <div id="fulfillment-select-container">
+                    <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Metode Penerimaan:</label>
+                    <select id="cust-fulfillment-type" onchange="handleFulfillmentChange()" class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600">
+                        <option value="pickup">📍 Ambil di Titik Jemput (Gratis)</option>
+                        <option value="cod">🛵 COD Tembalang (+ Ongkir Rp 3.000)</option>
+                    </select>
+                </div>
+
+                <!-- Promo Badge Notice if >= 3 pcs -->
+                <div id="promo-badge" class="hidden bg-emerald-50 border-2 border-emerald-600 rounded-xl p-3 text-xs font-bold text-emerald-900 flex items-center gap-2">
+                    <span>🎉</span>
+                    <span>Yeay! Pesanan ≥ 3 pcs, otomatis <span class="underline">FREE ONGKIR COD</span> & Bonus Thermal Bag!</span>
+                </div>
+
+                <!-- Pickup Locations Dropdown -->
+                <div id="pickup-container">
+                    <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Pilih Titik Jemput:</label>
+                    <select id="cust-pickup" class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600">
+                        <option value="Lobby utama fisip">Lobby utama fisip</option>
+                        <option value="Parkiran Fisip">Parkiran Fisip</option>
+                        <option value="Lapangan basket fisip">Lapangan basket fisip</option>
+                    </select>
+                </div>
+
+                <!-- COD Detailed Address Container -->
+                <div id="cod-address-container" class="hidden">
+                    <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Detail Alamat COD Tembalang:</label>
+                    <textarea id="cust-cod-address" rows="2" placeholder="Contoh: Kost Griya Mahasiswa No. 12, Jl. Ngesrep Timur V..." class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600"></textarea>
+                    <p id="cod-info-text" class="text-[11px] text-gray-600 mt-1 font-medium">✨ Pesan &lt; 3 pcs kena tambahan ongkir Rp 3.000.</p>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-800 mb-1">Catatan Tambahan (Opsional):</label>
+                    <input type="text" id="cust-notes" placeholder="Misal: Jangan terlalu manis / Titik patokan..." class="w-full bg-amber-50/50 border-2 border-gray-900 rounded-xl px-3.5 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-rose-600">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sticky Bottom Cart Summary Bar -->
+    <div id="sticky-cart" class="fixed bottom-0 left-0 right-0 bg-white border-t-4 border-gray-900 p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.15)] transform translate-y-full transition-transform duration-300 z-40">
+        <div class="max-w-md mx-auto flex items-center justify-between gap-4">
+            <div>
+                <p class="text-xs font-bold text-gray-500 uppercase">Total Pesanan</p>
+                <div class="flex items-baseline gap-2">
+                    <span id="total-price" class="font-fredoka text-2xl text-rose-600 font-bold">Rp 0</span>
+                    <span id="total-items" class="text-xs font-bold bg-amber-100 border border-gray-900 px-2 py-0.5 rounded-md">0 pcs</span>
+                </div>
+            </div>
+            <button onclick="openPaymentModal()" class="sukii-btn bg-amber-300 hover:bg-amber-400 text-gray-900 font-fredoka text-base px-6 py-3 rounded-2xl flex items-center gap-2 shadow-sm">
+                <span>Bayar QRIS & Pesan</span>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-200">
+        <div id="modal-content" class="bg-white rounded-3xl max-w-sm w-full p-6 text-center border-4 border-gray-900 shadow-[8px_8px_0px_#1F2937] scale-95 transition-transform duration-200">
+            <div id="modal-icon" class="text-5xl mb-3">⚠️</div>
+            <h3 id="modal-title" class="font-fredoka text-2xl text-gray-900 mb-2">Pemberitahuan</h3>
+            <p id="modal-message" class="text-sm text-gray-700 mb-6 font-medium">Pesan</p>
+            <button onclick="closeModal()" class="sukii-btn bg-rose-600 hover:bg-rose-700 text-white font-bold w-full py-3 rounded-xl">
+                Mengerti
+            </button>
+        </div>
+    </div>
+
+    <!-- Payment QRIS Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-200">
+        <div id="payment-modal-content" class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border-4 border-gray-900 scale-95 transition-transform duration-200 overflow-y-auto max-h-[90vh]">
+            <div class="text-center mb-4">
+                <span class="text-4xl">💳</span>
+                <h3 class="font-fredoka text-2xl text-gray-900 mt-2">Scan QRIS Pembayaran</h3>
+                <p class="text-sm text-gray-600">Silakan scan kode QRIS di bawah ini untuk membayar pesananmu.</p>
+            </div>
+
+            <!-- Total Nominal Box -->
+            <div class="bg-amber-50 border-2 border-amber-300 rounded-2xl p-4 text-center mb-4">
+                <p class="text-xs font-bold text-amber-900 uppercase tracking-wide">Total yang harus dibayar:</p>
+                <p id="modal-total-display" class="font-fredoka text-3xl text-rose-600 font-bold">Rp 0</p>
+            </div>
+
+            <!-- QRIS Image Display with user's uploaded QRIS -->
+            <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 flex flex-col items-center justify-center mb-4 shadow-inner">
+                <img src="qris.jpeg" alt="QRIS Nazril Ghifari" class="w-64 h-auto rounded-xl border border-gray-300 shadow-sm object-contain" />
+<p class="text-xs font-bold text-gray-800 mt-2 text-center">AN: NAZRIL GHIFARI (GABIN SUKII)</p>
+                <p class="text-[10px] text-gray-500 mt-1 text-center italic">Catatan: Pastikan nominal transfer sesuai total di atas ya!</p>
+            </div>
+
+            <!-- Kirim Bukti TF via WhatsApp Button with Pre-filled text -->
+            <div class="mb-5">
+                <button onclick="sendProofViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-fredoka text-base py-3 px-4 rounded-2xl flex items-center justify-center gap-2 shadow-md transition-all">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Bukti TF ke Admin (WhatsApp)
+                </button>
+                <p class="text-[11px] text-gray-600 text-center mt-2 font-medium">✨ Klik tombol di atas setelah transfer untuk mengirim bukti & rincian pesanan langsung ke Admin.</p>
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="closePaymentModal()" class="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 rounded-xl transition-colors">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data Produk berdasarkan varian
+        const products = [
+            { 
+                id: 'goguma', 
+                name: 'Goguma', 
+                desc: 'ubi ungu asli', 
+                price: 10000, 
+                emoji: '🍠',
+                colorClass: 'bg-purple-100 border-purple-400' 
+            },
+            { 
+                id: 'oreo', 
+                name: 'Vanilla Oreo', 
+                desc: 'Klasik yang ga pernah salah', 
+                price: 10000, 
+                emoji: '🍪',
+                colorClass: 'bg-gray-100 border-gray-400'
+            },
+            { 
+                id: 'strawberry', 
+                name: 'Strawberry', 
+                desc: 'Asem manis nyegerin', 
+                price: 10000, 
+                emoji: '🍓',
+                colorClass: 'bg-pink-100 border-pink-400'
+            },
+            { 
+                id: 'coklat', 
+                name: 'Coklat', 
+                desc: 'Pecinta cokelat wajib kumpul', 
+                price: 10000, 
+                emoji: '🍫',
+                colorClass: 'bg-orange-100 border-orange-400'
+            }
+        ];
+
+        const cart = {
+            goguma: 0,
+            oreo: 0,
+            strawberry: 0,
+            coklat: 0
+        };
+
+        let cachedTotalFinal = 0;
+
+        function renderProducts() {
+            const container = document.getElementById('product-list');
+            if (!container) return;
+            
+            container.innerHTML = '';
+            products.forEach(product => {
+                const html = `
+                    <div class="sukii-card bg-white p-4 flex gap-4 items-center relative overflow-hidden">
+                        <div class="flex-grow">
+                            <h3 class="font-fredoka text-xl text-gray-900 leading-tight mb-1">${product.name} ${product.emoji}</h3>
+                            <p class="text-sm font-bold text-gray-700 mb-2">${product.desc}</p>
+                            <p class="font-bold text-rose-600 text-lg">Rp 10.000</p>
+                        </div>
+                        
+                        <!-- Controls -->
+                        <div class="flex items-center gap-2 bg-white border-2 border-gray-900 rounded-xl p-1.5 shadow-sm">
+                            <button onclick="updateCart('${product.id}', -1)" class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 font-bold active:bg-gray-200 transition-colors">
+                                <i class="fa-solid fa-minus text-sm"></i>
+                            </button>
+                            <span id="qty-${product.id}" class="font-bold w-6 text-center text-gray-900 text-lg font-fredoka">0</span>
+                            <button onclick="updateCart('${product.id}', 1)" class="w-9 h-9 rounded-lg bg-rose-600 flex items-center justify-center text-white font-bold active:bg-rose-700 transition-colors">
+                                <i class="fa-solid fa-plus text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += html;
+            });
+        }
+
+        function formatRupiah(number) {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(number);
+        }
+
+        function updateCart(id, change) {
+            if (cart[id] + change >= 0) {
+                cart[id] += change;
+                const qtyEl = document.getElementById(`qty-${id}`);
+                if (qtyEl) qtyEl.innerText = cart[id];
+                updateSummary();
+            }
+        }
+
+        function updateSummary() {
+            let totalQty = 0;
+            let totalPrice = 0;
+
+            for (const id in cart) {
+                totalQty += cart[id];
+                const product = products.find(p => p.id === id);
+                totalPrice += cart[id] * product.price;
+            }
+
+            const fulfillmentTypeElement = document.getElementById('cust-fulfillment-type');
+            const fulfillmentContainer = document.getElementById('fulfillment-select-container');
+            const pickupContainer = document.getElementById('pickup-container');
+            const codContainer = document.getElementById('cod-address-container');
+            const promoBadge = document.getElementById('promo-badge');
+            const codInfoText = document.getElementById('cod-info-text');
+
+            let finalPrice = totalPrice;
+
+            if (totalQty >= 3) {
+                if (fulfillmentContainer) fulfillmentContainer.classList.add('hidden');
+                if (pickupContainer) pickupContainer.classList.add('hidden');
+                if (codContainer) codContainer.classList.remove('hidden');
+                if (promoBadge) promoBadge.classList.remove('hidden');
+                if (codInfoText) codInfoText.innerText = '🎉 Yeay! Karena pesan ≥ 3 pcs, kamu BERHAK FREE ONGKIR COD Tembalang & Free Thermal Bag!';
+                if (fulfillmentTypeElement) fulfillmentTypeElement.value = 'cod';
+            } else {
+                if (fulfillmentContainer) fulfillmentContainer.classList.remove('hidden');
+                if (promoBadge) promoBadge.classList.add('hidden');
+                const type = fulfillmentTypeElement ? fulfillmentTypeElement.value : 'pickup';
+                if (type === 'cod') {
+                    if (pickupContainer) pickupContainer.classList.add('hidden');
+                    if (codContainer) codContainer.classList.remove('hidden');
+                    if (codInfoText) codInfoText.innerText = '✨ Pesan < 3 pcs kena tambahan ongkir Rp 3.000.';
+                    finalPrice += 3000;
+                } else {
+                    if (pickupContainer) pickupContainer.classList.remove('hidden');
+                    if (codContainer) codContainer.classList.add('hidden');
+                }
+            }
+
+            cachedTotalFinal = finalPrice;
+
+            const totalItemsEl = document.getElementById('total-items');
+            const totalPriceEl = document.getElementById('total-price');
+            if (totalItemsEl) totalItemsEl.innerText = `${totalQty} pcs`;
+            if (totalPriceEl) totalPriceEl.innerText = formatRupiah(finalPrice);
+
+            const stickyCart = document.getElementById('sticky-cart');
+            if (stickyCart) {
+                if (totalQty > 0) {
+                    stickyCart.classList.remove('translate-y-full');
+                } else {
+                    stickyCart.classList.add('translate-y-full');
+                }
+            }
+        }
+
+        function handleFulfillmentChange() {
+            let totalQty = 0;
+            for (const id in cart) {
+                totalQty += cart[id];
+            }
+            if (totalQty >= 3) return;
+
+            const fulfillmentTypeEl = document.getElementById('cust-fulfillment-type');
+            const type = fulfillmentTypeEl ? fulfillmentTypeEl.value : 'pickup';
+            const pickupContainer = document.getElementById('pickup-container');
+            const codContainer = document.getElementById('cod-address-container');
+            const codInfoText = document.getElementById('cod-info-text');
+
+            if (type === 'cod') {
+                if (pickupContainer) pickupContainer.classList.add('hidden');
+                if (codContainer) codContainer.classList.remove('hidden');
+                if (codInfoText) codInfoText.innerText = '✨ Pesan < 3 pcs kena tambahan ongkir Rp 3.000.';
+            } else {
+                if (pickupContainer) pickupContainer.classList.remove('hidden');
+                if (codContainer) codContainer.classList.add('hidden');
+            }
+            updateSummary();
+        }
+
+        function showModal(title, message, icon = '⚠️') {
+            const modal = document.getElementById('custom-modal');
+            const content = document.getElementById('modal-content');
+            
+            const titleEl = document.getElementById('modal-title');
+            const msgEl = document.getElementById('modal-message');
+            const iconEl = document.getElementById('modal-icon');
+
+            if (titleEl) titleEl.innerText = title;
+            if (msgEl) msgEl.innerText = message;
+            if (iconEl) iconEl.innerText = icon;
+
+            if (modal && content) {
+                modal.classList.remove('hidden');
+                void modal.offsetWidth;
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('custom-modal');
+            const content = document.getElementById('modal-content');
+            
+            if (modal && content) {
+                modal.classList.add('opacity-0');
+                content.classList.add('scale-95');
+                
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 200);
+            }
+        }
+
+        function openPaymentModal() {
+            const nameInput = document.getElementById('cust-name');
+            const waInput = document.getElementById('cust-wa');
+            const name = nameInput ? nameInput.value.trim() : '';
+            const wa = waInput ? waInput.value.trim() : '';
+
+            if (!name && !wa) {
+                showModal('Waduh!', 'Nama panggilan dan Nomor WhatsApp wajib diisi dulu ya Kak sebelum memesan! 😊', '📱');
+                if (nameInput) nameInput.focus();
+                return;
+            }
+            if (!name) {
+                showModal('Waduh!', 'Nama panggilan wajib diisi nih Kak.', '✏️');
+                if (nameInput) nameInput.focus();
+                return;
+            }
+            if (!wa) {
+                showModal('Waduh!', 'Nomor WhatsApp wajib diisi supaya kami bisa menghubungi Kakak.', '📞');
+                if (waInput) waInput.focus();
+                return;
+            }
+
+            let totalQty = 0;
+            for (const id in cart) {
+                totalQty += cart[id];
+            }
+
+            if (totalQty === 0) {
+                showModal('Keranjang Kosong', 'Pilih minimal 1 es krim Gabin dulu yuk!', '🍦');
+                return;
+            }
+
+            const totalDisplay = document.getElementById('modal-total-display');
+            if (totalDisplay) totalDisplay.innerText = formatRupiah(cachedTotalFinal);
+
+            const modal = document.getElementById('payment-modal');
+            const content = document.getElementById('payment-modal-content');
+            if (modal && content) {
+                modal.classList.remove('hidden');
+                void modal.offsetWidth;
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+            }
+        }
+
+        function closePaymentModal() {
+            const modal = document.getElementById('payment-modal');
+            const content = document.getElementById('payment-modal-content');
+            if (modal && content) {
+                modal.classList.add('opacity-0');
+                content.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 200);
+            }
+        }
+
+        async function saveToSpreadsheet(orderData) {
+            const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbwLKHpiq7DH3_tIa5TV9jnvtaqlboG2QUaPoPLdyDRKt6PPOmHnDRb7CQEW20NsumqeRw/exec"; 
+            if (!SHEET_API_URL) return;
+
+            try {
+                await fetch(SHEET_API_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        date: orderData.date,
+                        name: orderData.name,
+                        fulfillment: orderData.fulfillment,
+                        location: orderData.location,
+                        total: orderData.total
+                    })
+                });
+            } catch (error) {
+                console.error("Gagal menyimpan ke spreadsheet:", error);
+            }
+        }
+
+        function sendProofViaWhatsApp() {
+            const nameInput = document.getElementById('cust-name');
+            const waInput = document.getElementById('cust-wa');
+            const notesInput = document.getElementById('cust-notes');
+            const fulfillmentTypeEl = document.getElementById('cust-fulfillment-type');
+            const pickupEl = document.getElementById('cust-pickup');
+            const codAddressInput = document.getElementById('cust-cod-address');
+
+            const name = nameInput ? nameInput.value.trim() : '';
+            const wa = waInput ? waInput.value.trim() : '';
+            const notes = notesInput ? notesInput.value.trim() : '';
+            const fulfillmentType = fulfillmentTypeEl ? fulfillmentTypeEl.value : 'pickup';
+            const pickup = pickupEl ? pickupEl.value : '';
+
+            let totalQty = 0;
+            let orderItemsList = [];
+
+            products.forEach(product => {
+                const qty = cart[product.id];
+                if (qty > 0) {
+                    totalQty += qty;
+                    orderItemsList.push(`- ${product.name}: ${qty} pcs`);
+                }
+            });
+
+            let fulfillmentMethodStr = "";
+            let locationDetailStr = "";
+
+            if (totalQty >= 3 || fulfillmentType === 'cod') {
+                const codVal = codAddressInput ? codAddressInput.value.trim() : "";
+                const finalCod = codVal ? codVal : "Tembalang Area";
+                fulfillmentMethodStr = "COD Tembalang";
+                locationDetailStr = finalCod;
+            } else {
+                fulfillmentMethodStr = "Titik Jemput";
+                locationDetailStr = pickup;
+            }
+
+            // Simpan otomatis ke Google Spreadsheet beserta nomor WA di nama
+            saveToSpreadsheet({
+                date: new Date().toLocaleString('id-ID'),
+                name: `${name} (${wa})`,
+                fulfillment: fulfillmentMethodStr,
+                location: locationDetailStr,
+                total: cachedTotalFinal
+            });
+
+            // Format Pesan WhatsApp
+            const message = `Halo Admin Gabin Sukii! 👋\n\nSaya mau konfirmasi pesanan dan pembayaran QRIS Pre-Order:\n\n*Nama:* ${name}\n*No. WA:* ${wa}\n*Metode:* ${fulfillmentMethodStr}\n*Lokasi/Alamat:* ${locationDetailStr}\n\n*Pesanan:*\n${orderItemsList.join('\n')}\n*Total Pembayaran:* ${formatRupiah(cachedTotalFinal)}${totalQty >= 3 ? '\n(Bonus: Free Thermal Bag & Free Ongkir COD)' : ''}${notes ? `\n\n*Catatan:* ${notes}` : ''}\n\nBerikut saya lampirkan bukti transfer pembayarannya ya Kak. Mohon dicek, terima kasih! 🙏`;
+
+            const adminPhone = "6285728142390";
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${adminPhone}?text=${encodedMessage}`;
+
+            closePaymentModal();
+            
+            // Buka WhatsApp
+            window.open(waUrl, '_blank');
+
+            showModal('Pesanan Berhasil Dicatat! 🎉', 'Terima kasih Kak! Data pesanan sudah terekam di sistem dan kamu diarahkan ke WhatsApp untuk mengirim bukti transfer.', '✅');
+            
+            setTimeout(() => {
+                location.reload();
+            }, 3500);
+        }
+
+        window.onload = () => {
+            renderProducts();
+        };
+    </script>
+</body>
+</html>
